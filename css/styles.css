@@ -1,0 +1,177 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #333; 
+}
+
+.encabezado {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 4px 20px;
+    background: #3156fa;
+}
+
+.encabezado h1 {
+    color: white;
+    font-size: 24px;
+}
+
+.navegacion ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.navegacion ul li {
+    display: inline;
+}
+
+.navegacion ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.navegacion ul li a:hover {
+    text-decoration: underline;
+}
+
+.contenido-principal {
+    padding: 20px;
+}
+
+.titulo-principal {
+    margin-bottom: 30px;
+}
+
+.productos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.producto {
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    padding: 15px;
+    width: 200px;
+    text-align: center;
+}
+
+.producto h3 {
+    font-size: 15px;
+}
+
+.imagen-producto {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+}
+
+.categoria {
+    font-size: 14px;
+    color: #3156fa;
+}
+
+.precio {
+    font-weight: bold;
+    color: #333;
+}
+
+.boton {
+    background: #75fb70;
+    color: #000;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.pie-pagina {
+    background: #3156fa; 
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.contenedor-footer {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap; 
+    margin-bottom: 10px;
+}
+
+.info {
+    display: flex;
+    gap: 20px;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.icono {
+    width: 24px; 
+    height: 24px;
+}
+
+@media (max-width: 768px) {
+    .encabezado {
+        flex-direction: column;
+        align-items: center; 
+        text-align: center;
+        padding: 20px;
+    }
+
+    .logo {
+        max-width: 80px;
+        margin-bottom: 10px;
+    }
+
+    .navegacion ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .productos {
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    .producto {
+        width: 90%; 
+        max-width: 300px; 
+    }
+
+    .pie-pagina {
+        text-align: center;
+    }
+
+    .contenedor-footer {
+        flex-direction: column; 
+        align-items: center;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .info {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .item {
+        justify-content: center;
+    }
+
+    .icono {
+        width: 30px; 
+        height: 30px;
+    }
+}
